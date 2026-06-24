@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/XEPDB1
+    username: ${APP_USER:sysman}
+    password: ${APP_USER_PASSWORD:sysman_dev_pwd}
+  flyway:
+    # Agrega los datos de prueba (seed) SOLO en este perfil - nunca en produccion.
+    locations: classpath:db/migration,classpath:db/seed/dev
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    com.sysman: DEBUG
+
+app:
+  cors:
+    # El frontend Next.js corre en otro origen durante desarrollo local.
+    allowed-origins: http://localhost:3000
