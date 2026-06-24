@@ -1,0 +1,7 @@
+.claude/
+
+backend/**/target/
+*.log
+
+docs/~$*
+docs/~WRL*.tmp
