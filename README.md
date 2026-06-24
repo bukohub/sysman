@@ -2,6 +2,12 @@
 
 Proyecto de prueba para una evaluación técnica con Sysman: sistema de gestión de órdenes operativas (backend en Spring Boot + Oracle, frontend en Next.js).
 
+## Demo en vivo
+
+https://sysman.vercel.app/
+
+![Listado de órdenes operativas](docs/screenshots/ordenes-operativas.png)
+
 ## Estructura
 
 ```
